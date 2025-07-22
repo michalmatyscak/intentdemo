@@ -335,7 +335,7 @@ export default function Home() {
       id: 4, 
       text: "User find dashboard at good usability level", 
       colorIndex: 3, // Pink
-      targetText: "Usability vise we don't have really problems with dashboards."
+      targetText: "Usability vise we don&apos;t have really problems with dashboards."
     },
     { 
       id: 5, 
@@ -1061,10 +1061,10 @@ export default function Home() {
                               handleHighlightMouseLeave();
                             }}
                           >
-                            what we miss a lot at dashboards to be more valuable is overview of how each customer call was closed - successfully by matching to one of our solutions, or we didn't have a solutions. We basically need to bring a custom fields with those values to dashboards from different system
+                            what we miss a lot at dashboards to be more valuable is overview of how each customer call was closed - successfully by matching to one of our solutions, or we didn&apos;t have a solutions. We basically need to bring a custom fields with those values to dashboards from different system
                           </span>
                         ) : (
-                          "what we miss a lot at dashboards to be more valuable is overview of how each customer call was closed - successfully by matching to one of our solutions, or we didn't have a solutions. We basically need to bring a custom fields with those values to dashboards from different system"
+                                                      "what we miss a lot at dashboards to be more valuable is overview of how each customer call was closed - successfully by matching to one of our solutions, or we didn&apos;t have a solutions. We basically need to bring a custom fields with those values to dashboards from different system"
                         )}. This kind of overview would give us valuable signals that we might miss something in our knowledge base, that would be important for our customers to quickly resolve their queries.
                       </div>
                       
@@ -1118,10 +1118,10 @@ export default function Home() {
                               handleHighlightMouseLeave();
                             }}
                           >
-                            Usability vise we don't have really problems with dashboards.
+                            Usability vise we don&apos;t have really problems with dashboards.
                           </span>
                         ) : (
-                          "Usability vise we don't have really problems with dashboards."
+                          "Usability vise we don&apos;t have really problems with dashboards."
                         )} Some individuals will of course find something. But nothing major that would cause this conversation.
                       </div>
                       

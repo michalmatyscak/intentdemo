@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+  
+  body {
+    color: #202428;
+    background-color: #f2f5f7;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom colors from Figma design */
+.text-primary {
+  color: #202428;
+}
+
+.text-secondary {
+  color: #30363c;
+}
+
+.text-muted {
+  color: #68707b;
+}
+
+.text-muted-light {
+  color: #939da7;
+}
+
+.bg-primary {
+  background-color: #f2f5f7;
+}
+
+.bg-white-custom {
+  background-color: #ffffff;
+}
+
+.border-custom {
+  border-color: #e1e6ea;
+}
+
+.border-custom-light {
+  border-color: #d4dbe1;
+}
+
+/* Hover states */
+.hover-bg-gray-50:hover {
+  background-color: #f9fafb;
+}
+
+.hover-bg-gray-100:hover {
+  background-color: #f3f4f6;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #8811e7;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition-property: color, background-color;
+}
+
+.btn-primary:hover {
+  background-color: #7a0fd8;
+}
+
+.btn-secondary {
+  border: 1px solid #d4dbe1;
+  color: #68707b;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition-property: color, background-color;
+}
+
+.btn-secondary:hover {
+  background-color: #f9fafb;
+}
+
+.btn-ghost {
+  color: #68707b;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition-property: color, background-color;
+}
+
+.btn-ghost:hover {
+  background-color: #f3f4f6;
 }
